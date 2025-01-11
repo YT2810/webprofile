@@ -2,8 +2,8 @@ import './globals.css'
 import Sidebar from './components/Sidebar'
 
 export const metadata = {
-  title: 'My WebProfile',
-  description: 'My personal portfolio using Next.js',
+  title: 'Yolfry Tubiñez',
+  description: 'Innovator in Blockchain & Web3 | Specialist in Operations Management & Digital Strategy | Business Development Expert',
 }
 
 export default function RootLayout({

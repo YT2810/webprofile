@@ -20,8 +20,8 @@ export default function Sidebar() {
           height={120}
           style={{ borderRadius: '50%' }}
         />
-        <h2 style={{ marginTop: '10px' }}>Tu Nombre</h2>
-        <p>Web3 Dev & Enthusiast</p>
+        <h2 style={{ marginTop: '10px' }}>YOLFRY E. TUBIÑEZ M.</h2>
+        <p>Blockchain Consultant || Web3 Developer || Digital Strategy Expert</p>
       </div>
 
       {/* Navegación */}
@@ -44,10 +44,10 @@ export default function Sidebar() {
         {/* Si showCVMenu es true, añadimos la clase 'show' */}
         <ul className={`cvMenu ${showCVMenu ? 'show' : ''}`}>
           <li>
-            <a href="/CV_en.pdf" download>English</a>
+            <a href="/CV_EN.pdf" download>English</a>
           </li>
           <li>
-            <a href="/CV_es.pdf" download>Español</a>
+            <a href="/CV_ES.pdf" download>Español</a>
           </li>
         </ul>
       </div>

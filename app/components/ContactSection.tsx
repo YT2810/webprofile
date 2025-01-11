@@ -4,21 +4,17 @@ export default function ContactSection() {
   return (
     <section id="contact" className="contactSection">
       <h2>Contact Me</h2>
-      <p>
-        Email: <a href="mailto:tu.correo@dominio.com">tu.correo@dominio.com</a>
-      </p>
-      <p>
-        LinkedIn: <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noreferrer">
-          linkedin.com/in/tu-usuario
+      <div className="contactIcons">
+        <a href="https://www.linkedin.com/in/yolfryt/" target="_blank" rel="noopener noreferrer">
+          <img src="/img/LinkedIn.png" alt="LinkedIn" />
         </a>
-      </p>
-      
-      {/* Si quieres poner el botón (o menú) de CV aquí, podrías hacerlo */}
-      <div className="cvButtonsContainer">
-        <a href="/CV_en.pdf" download className="cvButton">Download CV (EN)</a>
-        <a href="/CV_es.pdf" download className="cvButton">Descargar CV (ES)</a>
+        <a href="https://x.com/yolfry" target="_blank" rel="noopener noreferrer">
+          <img src="/img/x.png" alt="X (Twitter)" />
+        </a>
+        <a href="https://github.com/YT2810" target="_blank" rel="noopener noreferrer">
+          <img src="/img/github.png" alt="GitHub" />
+        </a>
       </div>
     </section>
   )
 }
-
