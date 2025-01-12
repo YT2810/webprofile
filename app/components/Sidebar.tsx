@@ -1,6 +1,5 @@
 'use client'
 import { useState } from 'react'
-import Image from 'next/image'
 
 export default function Sidebar() {
   const [showCVMenu, setShowCVMenu] = useState(false);
@@ -13,8 +12,8 @@ export default function Sidebar() {
     <aside className="sidebar">
       {/* Foto y nombre */}
       <div className="profile">
-        <Image
-          src="webprofile/img/profile.jpg"
+        <img
+          src="/img/profile.jpg"
           alt="Mi Foto de Perfil"
           width={120}
           height={120}
