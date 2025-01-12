@@ -14,7 +14,7 @@ export default function Sidebar() {
       {/* Foto y nombre */}
       <div className="profile">
         <Image
-          src="/img/profile.jpg"
+          src="webprofile/img/profile.jpg"
           alt="Mi Foto de Perfil"
           width={120}
           height={120}
