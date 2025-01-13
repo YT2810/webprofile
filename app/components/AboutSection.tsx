@@ -1,6 +1,10 @@
 'use client'
 
 export default function AboutSection() {
+  // Verificamos si estamos en producción y agregamos el basePath si es necesario
+  const isProd = process.env.NODE_ENV === 'production'; // Verifica si estamos en producción
+  const basePath = isProd ? '/webprofile' : ''; // Establece el basePath solo en producción
+
   return (
     <section id="about" className="aboutSection">
       {/* Título */}
@@ -35,20 +39,20 @@ export default function AboutSection() {
         <div className="certificationGrid">
           <div>
             <a href="https://academy.binance.com/en/track/digital-assets-and-blockchain-industry?utm_medium=web_share_copy" target="_blank" rel="noopener noreferrer">
-              <img className="certImg" src="/certs/binance1.png" alt="Binance Academy" width={100} height={100} style={{ borderRadius: '50%' }}/>
+              <img className="certImg" src={`${basePath}/certs/binance1.png`} alt="Binance Academy" width={100} height={100} style={{ borderRadius: '50%' }} />
               <p>Binance Academy – Blockchain Fundamentals</p>
             </a>
           </div>
           <div>
             <a href="https://www.coursera.org/account/accomplishments/verify/724N55HG4SMR" target="_blank" rel="noopener noreferrer">
-              <img className="certImg" src="/certs/consensys1.png" alt="ConsenSys Blockchain" width={100} height={100} style={{ borderRadius: '50%' }} />
+              <img className="certImg" src={`${basePath}/certs/consensys1.png`} alt="ConsenSys Blockchain" width={100} height={100} style={{ borderRadius: '50%' }} />
               <p>ConsenSys – Blockchain: Foundations and Use Cases</p>
             </a>
           </div>
           {/* Chainlink Tokenized RWA Bootcamp */}
           <div>
             <a href="https://collectors.poap.xyz/token/7249213" target="_blank" rel="noopener noreferrer">
-              <img className="certImg" src="/certs/chainlink1.gif" alt="Chainlink Bootcamp" width={100} height={100} style={{ borderRadius: '50%' }} />
+              <img className="certImg" src={`${basePath}/certs/chainlink1.gif`} alt="Chainlink Bootcamp" width={100} height={100} style={{ borderRadius: '50%' }} />
               <p>Chainlink – Tokenized RWA Bootcamp</p>
             </a>
           </div>
@@ -56,82 +60,64 @@ export default function AboutSection() {
           {/* Curso de Solidity en ETH Kipu */}
           <div>
             <a href="https://collectors.poap.xyz/token/6740721" target="_blank" rel="noopener noreferrer">
-              <img src="/certs/ethkipu1.png" alt="ETH Kipu Solidity" width={100} height={100} style={{ borderRadius: '50%' }} />
+              <img src={`${basePath}/certs/ethkipu1.png`} alt="ETH Kipu Solidity" width={100} height={100} style={{ borderRadius: '50%' }} />
               <p>ETH Kipu – Solidity Course 2023</p>
             </a>
           </div>
           <div>
             <a href="https://courses.edx.org/certificates/a78edb04bed644eb8d97ececf4356298" target="_blank" rel="noopener noreferrer">
-              <img src="/certs/idb1.png" alt="Inter-American Development Bank" width={100} height={100} style={{ borderRadius: '50%' }} />
+              <img src={`${basePath}/certs/idb1.png`} alt="Inter-American Development Bank" width={100} height={100} style={{ borderRadius: '50%' }} />
               <p>IDB – Desafíos y oportunidades en la economía digital</p>
             </a>
           </div>
           <div>
             <a href="https://opensea.io/assets/matic/0xdBf2138593aeC61d55d86E80b8ed86D7b9ba51F5/13475" target="_blank" rel="noopener noreferrer">
-              <img src="/certs/Encode1.jpg" alt="Encode Club Bootcamp" width={100} height={100} style={{ borderRadius: '50%' }} />
+              <img src={`${basePath}/certs/Encode1.jpg`} alt="Encode Club Bootcamp" width={100} height={100} style={{ borderRadius: '50%' }} />
               <p>Encode Club – Advanced Solidity Bootcamp</p>
             </a>
           </div>
           <div>
-            <img src="/certs/Push1.png" alt="Encode Club Bootcamp" width={100} height={100} style={{ borderRadius: '50%' }} />
+            <img src={`${basePath}/certs/Push1.png`} alt="Encode Club Bootcamp" width={100} height={100} style={{ borderRadius: '50%' }} />
             <p>Push Protocol – Billion Reasons to Build Bootcamp</p>
           </div>
           <div>
             <a href="https://sealweb3.com/badges/f0865bfd-ab29-4a82-903d-d6809f2063e0" target="_blank" rel="noopener noreferrer">
-              <img src="/certs/Educateth1.png" alt="EducaETH" width={100} height={100} style={{ borderRadius: '50%' }} />
-              <p>
-                Educateth – Introducción a Blockchain
-                <span>(Introduction to Blockchain)</span>
-              </p>
+              <img src={`${basePath}/certs/Educateth1.png`} alt="EducaETH" width={100} height={100} style={{ borderRadius: '50%' }} />
+              <p>Educateth – Introducción a Blockchain</p>
             </a>
           </div>
           <div>
             <a href="https://sealweb3.com/badges/f0865bfd-ab29-4a82-903d-d6809f2063e1" target="_blank" rel="noopener noreferrer">
-              <img src="/certs/Educateth2.png" alt="EducaETH Solidity Básico" width={100} height={100} style={{ borderRadius: '50%' }}/>
-              <p>
-                Educateth – Solidity Básico
-                <span>(Fundamentals of Solidity Programming)</span>
-              </p>
+              <img src={`${basePath}/certs/Educateth2.png`} alt="EducaETH Solidity Básico" width={100} height={100} style={{ borderRadius: '50%' }} />
+              <p>Educateth – Solidity Básico</p>
             </a>
           </div>
           <div>
             <a href="https://sealweb3.com/badges/f0865bfd-ab29-4a82-903d-d6809f2063e2" target="_blank" rel="noopener noreferrer">
-              <img src="/certs/Educateth3.png" alt="EducaETH Oportunidades del Ecosistema" width={100} height={100} style={{ borderRadius: '50%' }}/>
-              <p>
-                Educateth – Oportunidades del Ecosistema
-                <span>(Blockchain Ecosystem Opportunities)</span>
-              </p>
+              <img src={`${basePath}/certs/Educateth3.png`} alt="EducaETH Oportunidades del Ecosistema" width={100} height={100} style={{ borderRadius: '50%' }} />
+              <p>Educateth – Oportunidades del Ecosistema</p>
             </a>
           </div>
           <div>
             <a href="https://sealweb3.com/badges/f0865bfd-ab29-4a82-903d-d6809f2063e3" target="_blank" rel="noopener noreferrer">
-              <img src="/certs/Educateth4.png" alt="EducaETH Desarrollo Intermedio" width={100} height={100} style={{ borderRadius: '50%' }}/>
-              <p>
-                Educateth – Desarrollo Intermedio
-                <span>(Building Frontend Skills for Blockchain Applications)</span>
-              </p>
+              <img src={`${basePath}/certs/Educateth4.png`} alt="EducaETH Desarrollo Intermedio" width={100} height={100} style={{ borderRadius: '50%' }} />
+              <p>Educateth – Desarrollo Intermedio</p>
             </a>
           </div>
           <div>
             <a href="https://sealweb3.com/badges/f0865bfd-ab29-4a82-903d-d6809f2063e4" target="_blank" rel="noopener noreferrer">
-              <img src="/certs/Educateth5.png" alt="EducaETH Desarrollando Habilidades" width={100} height={100} style={{ borderRadius: '50%' }}/>
-              <p>
-                Educateth – Desarrollando Habilidades
-                <span>(Soft Skills for Multidisciplinary Blockchain Teams)</span>
-              </p>
+              <img src={`${basePath}/certs/Educateth5.png`} alt="EducaETH Desarrollando Habilidades" width={100} height={100} style={{ borderRadius: '50%' }} />
+              <p>Educateth – Desarrollando Habilidades</p>
             </a>
           </div>
           <div>
             <a href="https://opensea.io/assets/optimism/0x491e56692fe7c9eabc53f1de0902cba29e9cee75/1" target="_blank" rel="noopener noreferrer">
-              <img src="/certs/Invernez1.png" alt="La Incubadora Web3" width={100} height={100} style={{ borderRadius: '50%' }}/>
-              <p>
-                La Incubadora Web3 – Programa para Startups Web3 <br />
-                <span>(Web3 Startups Program)</span>
-              </p>
+              <img src={`${basePath}/certs/Invernez1.png`} alt="La Incubadora Web3" width={100} height={100} style={{ borderRadius: '50%' }} />
+              <p>La Incubadora Web3 – Programa para Startups Web3</p>
             </a>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
