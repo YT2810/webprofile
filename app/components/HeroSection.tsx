@@ -2,6 +2,10 @@
 'use client'
 
 export default function HeroSection() {
+  // Verificamos si estamos en producción y agregamos el basePath si es necesario
+  const isProd = process.env.NODE_ENV === 'production'; // Verifica si estamos en producción
+  const basePath = isProd ? '/webprofile' : ''; // Establece el basePath solo en producción
+
   return (
     <section id="hero" className="hero">
       {/* Tagline */}
@@ -11,7 +15,7 @@ export default function HeroSection() {
 
       {/* Botones CTA */}
       <div className="heroCTA">
-        <a href="/CV_en.pdf" download className="btn">Download CV</a>
+        <a href= {`${basePath}/CV_EN.pdf`} download className="btn">Download CV</a>
         <a href="#contact" className="btnSecondary">Contact Me</a>
       </div>
     </section>

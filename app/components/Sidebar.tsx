@@ -2,6 +2,9 @@
 import { useState } from 'react'
 
 export default function Sidebar() {
+  // Verificamos si estamos en producción y agregamos el basePath si es necesario
+  const isProd = process.env.NODE_ENV === 'production'; // Verifica si estamos en producción
+  const basePath = isProd ? '/webprofile' : ''; // Establece el basePath solo en producción
   const [showCVMenu, setShowCVMenu] = useState(false);
 
   const handleToggleCV = () => {
@@ -13,7 +16,7 @@ export default function Sidebar() {
       {/* Foto y nombre */}
       <div className="profile">
         <img
-          src="/img/profile.jpg"
+          src={`${basePath}/img/profile.jpg`}
           alt="Mi Foto de Perfil"
           width={120}
           height={120}
@@ -43,10 +46,10 @@ export default function Sidebar() {
         {/* Si showCVMenu es true, añadimos la clase 'show' */}
         <ul className={`cvMenu ${showCVMenu ? 'show' : ''}`}>
           <li>
-            <a href="/CV_EN.pdf" download>English</a>
+            <a href={`${basePath}/CV_EN.pdf`} download>English</a>
           </li>
           <li>
-            <a href="/CV_ES.pdf" download>Español</a>
+            <a href={`${basePath}/CV_ES.pdf`} download>Español</a>
           </li>
         </ul>
       </div>
