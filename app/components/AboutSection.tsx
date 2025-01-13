@@ -18,7 +18,7 @@ export default function AboutSection() {
       {/* Logros destacados */}
       <div className="aboutHighlights">
         <p>
-          In Venezuela, I founded Pegasoplay, an online gambling platform that generated over $80,000 annually, and grew "Desafío Hípico" to nearly 30,000 subscribers with over 250,000 monthly visits. Since 2017, I’ve been focused on blockchain and Web3 projects, achieving milestones such as guiding Invernez to 3rd place in a competitive incubator, Fractls to 4th place in a global bootcamp, and leading <strong>SmartAssist</strong> to secure 1st place in the DEFI & RWA track of the Educateth and ETHKIPU Hackathon. SmartAssist also earned an incubation program for 2025.
+          In Venezuela, I founded Pegasoplay, an online gambling platform that generated over $80,000 annually, and grew "Desafío Hípico" (Youtube Channel) to nearly 30,000 subscribers with over 250,000 monthly visits. Since 2017, I’ve been focused on blockchain and Web3 projects, achieving milestones such as guiding Invernez to 3rd place in a competitive incubator, Fractls to 4th place in a global bootcamp, and leading <strong>SmartAssist</strong> to secure 1st place in the DEFI & RWA track of the Educateth and ETHKIPU Hackathon. SmartAssist also earned an incubation program for 2025.
         </p>
       </div>
 
